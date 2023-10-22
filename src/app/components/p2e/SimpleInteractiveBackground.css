@@ -1,0 +1,60 @@
+/* SimpleInteractiveBackground.css */
+.halo-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* SimpleInteractiveBackground.css */
+.halo-background canvas {
+    filter: drop-shadow(0 0 5px #4d4dff) drop-shadow(0 0 10px #4d4dff) drop-shadow(0 0 15px #4d4dff) drop-shadow(0 0 20px #4d4dff);
+}
+
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+.game-link {
+    position: absolute;
+    width: 150px;  /* Or whatever width you desire */
+    height: auto;  /* Maintains the aspect ratio */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: none;
+    z-index: 2;
+
+}
+
+.game-link img {
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 2s ease-in forwards; /* 2s duration, ease-in timing, animation will stop at final frame (forwards) */
+    /* Additional styles for the image */
+}
+
+.game-link img:hover {
+    transform: scale(1.2);  /* Increase size by 20% when hovered */
+}
+
+.game-link p {
+    transition: color 0.3s ease-in-out;
+    font-family: 'Press Start 2P', cursive;  /* Example of an arcade-style font */
+    font-size: 1.5em;  /* Example font size, adjust as needed */
+}
+
+.game-link p:hover {
+    color: #4d4dff;  /* Change color when hovered */
+}
