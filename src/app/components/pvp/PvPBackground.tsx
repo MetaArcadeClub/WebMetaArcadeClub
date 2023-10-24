@@ -138,9 +138,9 @@ const PvPBackground: React.FC = () => {
             <div className="content">
                 {/* Your content here */}
             </div>
-            {/*<a href="https://metaarcadeclub.com/pong" className="game-link">
-            <img src="/assets/pongIcon.png" alt="Play Game" />
-            </a>*/}
+            <a href="https://pong.vercel.app/" target="_blank" className="game-link">
+            <img src="/assets/pong.png" alt="Play Game" />
+            </a>
         </div>
     );
 };

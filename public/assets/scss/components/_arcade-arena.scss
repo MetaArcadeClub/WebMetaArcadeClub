@@ -94,13 +94,26 @@
         padding-top: 0px;  // Add padding to move buttons down
         margin-top: -100%;  // Adjust margin to move buttons up
 
+        .slider__img.button1 img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .slider__img.button2 img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .slider__img.button3 img {
+        width: 100px;
+        height: 120px;
+    }
+
         .slider__img {
             margin: 8% 0;  // Adjusted margin for mobile
 
-            img {
-                width: 100px;  // Adjusted width for mobile
-                height: 100px;  // Adjusted height for mobile
-            }
+            
+
         .icon-text {
             position: absolute;
             bottom: -55px;  // Adjust this value as needed

@@ -138,7 +138,7 @@ const SimpleInteractiveBackground: React.FC = () => {
             <div className="content">
                 {/* Your content here */}
             </div>
-            <a href="https://metaarcadeclub.com/spaceglide" className="game-link">
+            <a href="https://spaceglide.vercel.app/" target="_blank" className="game-link">
             <img src="/assets/gameIcon.png" alt="Play Game" />
             </a>
         </div>

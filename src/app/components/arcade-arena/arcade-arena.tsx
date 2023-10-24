@@ -43,7 +43,7 @@ const ArcadeArena = () => {
  <div className="image-buttons">
                     <div className="slider__img button1">
                         <Link href="/p2e">
-                            <Image src={slider_img1} alt="Button 1" width={200} height={200} priority />
+                            <Image src={slider_img1} alt="Button 1" width={236} height={300} priority />
                         </Link>
                         <div className="icon-text">Play 2 Earn</div>
                     </div>
@@ -55,7 +55,7 @@ const ArcadeArena = () => {
                     </div>
                     <div className="slider__img button3">
                         <Link href="/m2e">
-                            <Image src={slider_img3} alt="Button 3" width={200} height={200} priority />
+                            <Image src={slider_img3} alt="Button 3" width={236} height={300} priority />
                         </Link>
                         <div className="icon-text">Move 2 Earn</div>
                     </div>
