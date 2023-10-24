@@ -87,13 +87,16 @@ const PvPBackground: React.FC = () => {
     const haloBackgroundRef = useRef(null);
 
     useEffect(() => {
+    if (haloBackgroundRef.current !== null) {
         myP5.current = new p5(Sketch, haloBackgroundRef.current);
         return () => { myP5.current.remove(); };
-    }, []);
+    }
+}, []);
+
 
     const Sketch = (p: any) => {
-        let ripples = [];
-        let particles = [];
+        let ripples: Ripple[] = [];
+        let particles: Particle[] = [];
 
         p.setup = () => {
             p.createCanvas(window.innerWidth, window.innerHeight);
