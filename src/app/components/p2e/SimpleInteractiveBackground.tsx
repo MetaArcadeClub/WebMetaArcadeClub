@@ -54,6 +54,50 @@ class Particle {
     }
 }
 
+const Sketch = (p: any) => {
+        let ripples: Ripple[] = [];
+        let particles: Particle[] = [];
+
+        p.setup = () => {
+            p.createCanvas(window.innerWidth, window.innerHeight);
+            p.smooth();
+            p.frameRate(30);
+            for (let i = 0; i < 100; i++) {
+                particles.push(new Particle(p));
+            }
+        };
+
+        p.draw = () => {
+            p.clear();
+
+            particles.forEach((particle, index) => {
+                particle.repel(p.mouseX, p.mouseY);
+                particle.run();
+                if (particle.isOutOfViewport()) {
+                    particles[index] = new Particle(p);
+                }
+            });
+
+            ripples.forEach((ripple, index) => {
+                ripple.display();
+                ripple.expand();
+                if (ripple.alpha <= 0) {
+                    ripples.splice(index, 1);
+                }
+            });
+        };
+
+        p.mouseMoved = () => {
+            ripples.push(new Ripple(p, p.mouseX, p.mouseY));
+        }
+
+        p.windowResized = () => {
+            if (typeof window !== 'undefined') {
+            p.resizeCanvas(window.innerWidth, window.innerHeight);
+            }
+            };
+    };
+
 class Ripple {
     p: any;
     x: number;
@@ -93,48 +137,6 @@ const SimpleInteractiveBackground: React.FC = () => {
     }
 }, []);
 
-
-    const Sketch = (p: any) => {
-        let ripples: Ripple[] = [];
-        let particles: Particle[] = [];
-
-        p.setup = () => {
-            p.createCanvas(window.innerWidth, window.innerHeight);
-            p.smooth();
-            p.frameRate(30);
-            for (let i = 0; i < 100; i++) {
-                particles.push(new Particle(p));
-            }
-        };
-
-        p.draw = () => {
-            p.clear();
-
-            particles.forEach((particle, index) => {
-                particle.repel(p.mouseX, p.mouseY);
-                particle.run();
-                if (particle.isOutOfViewport()) {
-                    particles[index] = new Particle(p);
-                }
-            });
-
-            ripples.forEach((ripple, index) => {
-                ripple.display();
-                ripple.expand();
-                if (ripple.alpha <= 0) {
-                    ripples.splice(index, 1);
-                }
-            });
-        };
-
-        p.mouseMoved = () => {
-            ripples.push(new Ripple(p, p.mouseX, p.mouseY));
-        }
-
-        p.windowResized = () => {
-            p.resizeCanvas(window.innerWidth, window.innerHeight);
-        };
-    };
 
     return (
         <div className="halo-background" ref={haloBackgroundRef}>

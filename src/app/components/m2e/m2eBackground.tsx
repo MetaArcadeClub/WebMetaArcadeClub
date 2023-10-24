@@ -82,18 +82,7 @@ class Ripple {
     }
 }
 
-const M2eBackground: React.FC = () => {
-    const myP5: any = useRef(null);
-    const haloBackgroundRef = useRef(null);
-
-    useEffect(() => {
-    if (haloBackgroundRef.current !== null) {
-        myP5.current = new p5(Sketch, haloBackgroundRef.current);
-        return () => { myP5.current.remove(); };
-    }
-}, []);
-
-    const Sketch = (p: any) => {
+const Sketch = (p: any) => {
         let ripples: Ripple[] = [];
         let particles: Particle[] = [];
 
@@ -131,9 +120,22 @@ const M2eBackground: React.FC = () => {
         }
 
         p.windowResized = () => {
+            if (typeof window !== 'undefined') {
             p.resizeCanvas(window.innerWidth, window.innerHeight);
-        };
+            }
+            };
     };
+
+const M2eBackground: React.FC = () => {
+    const myP5: any = useRef(null);
+    const haloBackgroundRef = useRef(null);
+
+    useEffect(() => {
+    if (haloBackgroundRef.current !== null) {
+        myP5.current = new p5(Sketch, haloBackgroundRef.current);
+        return () => { myP5.current.remove(); };
+    }
+}, []);
 
     return (
         <div className="halo-background" ref={haloBackgroundRef}>
