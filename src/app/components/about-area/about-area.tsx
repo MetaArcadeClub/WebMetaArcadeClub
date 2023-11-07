@@ -224,9 +224,9 @@ const AboutArea = () => {
                   <TabItem
                       id="05"
                       img={about_bg_5}
-                      title="Hussayn"
+                      title="Lukas"
                       subtitle="Full-Stack Game Dev"
-                      description="The digital architect with more layers than an onion. From back-end battles to front-end fiestas, Hussayn code dances better than most people."
+                      description="The digital architect with more layers than an onion. From back-end battles to front-end fiestas, Lukas code dances better than most people."
                       gameImages={[icon_1, icon_2, icon_3]}
                       gameDescriptions={[
                           "Byte-sized Ballet",
