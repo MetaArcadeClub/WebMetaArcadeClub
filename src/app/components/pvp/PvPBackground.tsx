@@ -21,7 +21,7 @@ const PvPBackground: React.FC = () => {
             <div className="content">
                 {/* Your content here */}
             </div>
-            <a href="https://pong.vercel.app/" target="_blank" className="game-link">
+            <a href="https://3dpong.vercel.app/" target="_blank" className="game-link">
                 <img src="/assets/pong.png" alt="Play Game" />
             </a>
         </div>
