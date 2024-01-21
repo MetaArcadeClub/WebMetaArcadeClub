@@ -24,11 +24,12 @@ const road_map_lists: IRoadMap[] = [
     active: true,
     title: "Phase I",
     lists: [
-      {active: true, text: "Finalize 3D Pong with optimal visuals and gameplay" },
-      {active: true, text: "Host a celebratory game launch tournament with exciting prizes" },
-      {active: true, text: "Revamp the Meta Arcade Club website for better user experience" },
-      {active: true, text: "Initiate targeted social media campaigns" },
-      {active: true, text: "Implement feedback mechanisms for improvement" },
+      {active: true, text: "Establish the necessary legal frameworks and compliance for the project." },
+      {active: true, text: "Ensure an enhanced user experience on the Meta Arcade Club website." },
+      {active: true, text: "Complete the development of WebGL 3D Pong with optimal visuals and gameplay." },
+      {active: true, text: "Make WebGL 3D Pong available on mobile devices for broader accessibility." },
+      {active: false, text: "Implement skins customization features to enhance player engagement." },
+      {active: false, text: "Add 3D Pong to popular gaming platforms such as Steam and Play Store apps." },
     ],
   },
   {
@@ -36,10 +37,11 @@ const road_map_lists: IRoadMap[] = [
     active: false,
     title: "Phase II",
       lists: [
-      {active: false, text: "Official launch of 3D Pong with promotional campaigns." },
-      {active: false, text: "Launch Meta Arcade Club's first NFT collection with unique assets" },
-      {active: false, text: "Kickstart development of new NFT-based arcade games" },
-      {active: false, text: "Release special skins for 3D Pong and organize tournaments." },
+      {active: false, text: "Initiate the minting process for the Arcade NFT collection." },
+      {active: false, text: "Expand the Meta Arcade Club team to support growing project needs." },
+      {active: false, text: "Kickstart development of new games" },
+      {active: false, text: "Design and finalize the tokenomics model for the project." },
+      {active: false, text: "Develop the marketplace for cNFT skins." },
     ],
   },
   {
@@ -48,10 +50,11 @@ const road_map_lists: IRoadMap[] = [
     title: "Phase III",
     lists: [
       {active: false, text: "Roll out NFT renting and introduce the Pawn Arcade feature" },
-      {active: false, text: "Aim for a broader audience, moving beyond just the web3 enthusiasts" },
+      {active: false, text: "Token launch" },
+      {active: false, text: "Develop an event planning app" },
       {active: false, text: "Start producing and distributing branded merchandise" },
       {active: false, text: "Promote the exclusive Arcadians collection and metaverse" },
-      {active: false, text: "Offer exclusive ticket collection for special perks" },
+      {active: false, text: "Initiate the development of the Move 2 Earn (M2E) mobile app." },
     ],
     },
   {
@@ -60,9 +63,10 @@ const road_map_lists: IRoadMap[] = [
     title: "Phase IV",
     lists: [
       {active: false, text: "Begin the exciting journey of developing the Meta Arcade Club metaverse" },
-      {active: false, text: "Regularly introduce new games to the platform to retain user interest" },
+      {active: false, text: "Regularly introduce new games to the platform" },
       {active: false, text: "Launch limited edition merchandise" },
       {active: false, text: "Review and refine the Level Up Zone, adapting to user needs" },
+      {active: false, text: "More to be announced." },
     ],
   },
 ];

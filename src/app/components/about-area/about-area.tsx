@@ -68,8 +68,8 @@ type ITabProps = {
     isActive?: boolean;
     description?: string;
     subtitle?: string;
-    gameImages?: StaticImageData[];  // Add this line
-    gameDescriptions?: string[];    // Add this line
+    gameImages?: StaticImageData[]; 
+    gameDescriptions?: string[];    
 }
 
 function TabItem({ id, img, title, isActive, description, subtitle, gameImages, gameDescriptions }: ITabProps) {
@@ -153,16 +153,16 @@ const AboutArea = () => {
               {/*</div>*/}
               <ul className="nav nav-tabs" id="myTab" role="tablist">
                 <NavBtn id="01" img={about_1} isActive={true} />
-                <NavBtn id="02" img={about_2} />
+                {/*<NavBtn id="02" img={about_2} />*/}
                 <NavBtn id="03" img={about_3} />
                 <NavBtn id="04" img={about_4} />
                 <NavBtn id="05" img={about_5} />
                 <NavBtn id="06" img={about_6} />
                 <NavBtn id="07" img={about_7} />
-                <NavBtn id="08" img={about_8} />
+                {/*<NavBtn id="08" img={about_8} />*/}
                 <NavBtn id="09" img={about_9} />
                 <NavBtn id="10" img={about_10} />
-                <NavBtn id="11" img={about_11} />
+                {/*<NavBtn id="11" img={about_11} />*/}
               </ul>
             </div>
           </div>
@@ -182,7 +182,7 @@ const AboutArea = () => {
                           "Daydreamer Extraordinaire"
                       ]}
                   />
-                  <TabItem
+                  {/*<TabItem
                       id="02"
                       img={about_bg_2}
                       title="AsterX"
@@ -194,7 +194,7 @@ const AboutArea = () => {
                           "Defender of the Arcade Realm",
                           "Joystick Juggler"
                       ]}
-                  />
+                  />*/}
                   <TabItem
                       id="03"
                       img={about_bg_3}
@@ -224,7 +224,7 @@ const AboutArea = () => {
                   <TabItem
                       id="05"
                       img={about_bg_5}
-                      title="Lukas"
+                      title="Ionut"
                       subtitle="Full-Stack Game Dev"
                       description="The digital architect with more layers than an onion. From back-end battles to front-end fiestas, Lukas code dances better than most people."
                       gameImages={[icon_1, icon_2, icon_3]}
@@ -260,7 +260,7 @@ const AboutArea = () => {
                           "RSVP Ringleader"
                       ]}
                   />
-                  <TabItem
+                  {/*<TabItem
                       id="08"
                       img={about_bg_8}
                       title="Virtual Partener"
@@ -272,11 +272,11 @@ const AboutArea = () => {
                           "Meme Magician",
                           "Digital Drumbeater"
                       ]}
-                  />
+                  />*/}
                   <TabItem
                       id="09"
                       img={about_bg_9}
-                      title="Carlous.eth"
+                      title="Adarg"
                       subtitle="Advisor"
                       description="The sage of the server, the Gandalf of our gaming journey. Guiding us through digital mazes with an ether torch."
                       gameImages={[icon_1, icon_2, icon_3]}
@@ -299,7 +299,7 @@ const AboutArea = () => {
                           "Triangular Trailblazer"
                       ]}
                   />
-                  <TabItem
+                  {/*<TabItem
                       id="11"
                       img={about_bg_11}
                       title="Vali"
@@ -311,7 +311,7 @@ const AboutArea = () => {
                           "Animation Alchemist",
                           "Vertex Vandal"
                       ]}
-                  />
+                  />*/}
           {/*<TabItem id="02" img={about_bg_2} title="Axie Infinity" rate="60%" />*/}
           {/*<TabItem id="03" img={about_bg_3} title="The Walking Dead" rate="75%"/>*/}
           {/*<TabItem id="04" img={about_bg_4} title="The Dogami" rate="65%" />*/}
